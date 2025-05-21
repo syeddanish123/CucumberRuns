@@ -1,113 +1,126 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-05T17:33:45 IST" name="Suite" finished-at="2025-02-05T17:34:05 IST" duration-ms="20179">
+  <suite started-at="2025-04-14T15:57:35 IST" name="CucumberSuite" finished-at="2025-04-14T15:58:16 IST" duration-ms="40780">
     <groups>
-      <group name="sanity">
-        <method signature="TC001_RegistrationCheck.verify_account_registration()[pri:0, instance:testCases.TC001_RegistrationCheck@79924b]" name="verify_account_registration" class="testCases.TC001_RegistrationCheck"/>
-        <method signature="TC004_VerifyMacProductSuccess_AddToCart.verifyMacAddToCart()[pri:0, instance:testCases.TC004_VerifyMacProductSuccess_AddToCart@12468a38]" name="verifyMacAddToCart" class="testCases.TC004_VerifyMacProductSuccess_AddToCart"/>
-        <method signature="TC005_Register_Login.testcaseRegister_login()[pri:0, instance:testCases.TC005_Register_Login@1aa7ecca]" name="testcaseRegister_login" class="testCases.TC005_Register_Login"/>
-      </group> <!-- sanity -->
-      <group name="master">
-        <method signature="TC001_RegistrationCheck.verify_account_registration()[pri:0, instance:testCases.TC001_RegistrationCheck@79924b]" name="verify_account_registration" class="testCases.TC001_RegistrationCheck"/>
-        <method signature="TC005_Register_Login.testcaseRegister_login()[pri:0, instance:testCases.TC005_Register_Login@1aa7ecca]" name="testcaseRegister_login" class="testCases.TC005_Register_Login"/>
-      </group> <!-- master -->
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
     </groups>
-    <test started-at="2025-02-05T17:33:45 IST" name="Test" finished-at="2025-02-05T17:34:05 IST" duration-ms="20179">
-      <class name="testCases.TC004_VerifyMacProductSuccess_AddToCart">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC004_VerifyMacProductSuccess_AddToCart@12468a38]" started-at="2025-02-05T17:33:53 IST" name="setup" finished-at="2025-02-05T17:33:55 IST" duration-ms="2836" status="PASS">
+    <test started-at="2025-04-14T15:57:35 IST" name="CucumberTests" finished-at="2025-04-14T15:58:16 IST" duration-ms="40780">
+      <class name="TestRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" started-at="2025-04-14T15:57:35 IST" name="setUpClass" finished-at="2025-04-14T15:57:36 IST" duration-ms="1195" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
+                <![CDATA[org.testng.TestRunner@26221bad]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verifyMacAddToCart()[pri:0, instance:testCases.TC004_VerifyMacProductSuccess_AddToCart@12468a38]" started-at="2025-02-05T17:33:55 IST" name="verifyMacAddToCart" finished-at="2025-02-05T17:33:56 IST" duration-ms="1064" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyMacAddToCart -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC004_VerifyMacProductSuccess_AddToCart@12468a38]" started-at="2025-02-05T17:33:56 IST" name="teardown" finished-at="2025-02-05T17:33:57 IST" duration-ms="238" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC004_VerifyMacProductSuccess_AddToCart -->
-      <class name="testCases.TC005_Register_Login">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC005_Register_Login@1aa7ecca]" started-at="2025-02-05T17:33:57 IST" name="setup" finished-at="2025-02-05T17:33:59 IST" duration-ms="2793" status="PASS">
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" started-at="2025-04-14T15:57:37 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-14T15:57:45 IST" duration-ms="8408" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA["Checking Login Functionality"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[local]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="testcaseRegister_login()[pri:0, instance:testCases.TC005_Register_Login@1aa7ecca]" started-at="2025-02-05T17:33:59 IST" name="testcaseRegister_login" finished-at="2025-02-05T17:34:05 IST" duration-ms="5541" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testcaseRegister_login -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC005_Register_Login@1aa7ecca]" started-at="2025-02-05T17:34:05 IST" name="teardown" finished-at="2025-02-05T17:34:05 IST" duration-ms="299" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC005_Register_Login -->
-      <class name="testCases.TC001_RegistrationCheck">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:testCases.TC001_RegistrationCheck@79924b]" started-at="2025-02-05T17:33:45 IST" name="setup" finished-at="2025-02-05T17:33:50 IST" duration-ms="4053" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" started-at="2025-04-14T15:57:45 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-14T15:58:10 IST" duration-ms="25067" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[windows]]>
+                <![CDATA["Login Data Driven"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
-            <param index="2">
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29e903cc9abb4e9b67833de7f430bbea, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\sdani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61337/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29e903cc9abb4e9b67833de7f430bbea]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//h2[normalize-space()='My Account']"}
+  (Session info: chrome=134.0.6998.178)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [29e903cc9abb4e9b67833de7f430bbea, findElement {using=xpath, value=//h2[normalize-space()='My Account']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.178, chrome: {chromedriverVersion: 134.0.6998.165 (fd886e2cb29..., userDataDir: C:\Users\sdani\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:61337}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:61337/devtoo..., se:cdpVersion: 134.0.6998.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 29e903cc9abb4e9b67833de7f430bbea
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy22.isDisplayed(Unknown Source)
+at pageObject.MyAccountPage.isMyAccounttextdisplayed(MyAccountPage.java:35)
+at stepDefinitions.Steps.my_account_page_should_be_displayed(Steps.java:63)
+at ✽.MyAccount Page should be displayed(file:///C:/Eclipse/WORKSPACE/OPENCART_PROJECT/src/test/resources/Feature/Login.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" started-at="2025-04-14T15:58:10 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2025-04-14T15:58:16 IST" duration-ms="5942" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[local]]>
+                <![CDATA["Login Data Driven"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Login Functionality"]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="verify_account_registration()[pri:0, instance:testCases.TC001_RegistrationCheck@79924b]" started-at="2025-02-05T17:33:50 IST" name="verify_account_registration" finished-at="2025-02-05T17:33:52 IST" duration-ms="2678" status="PASS">
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner.TestRunner@7cc0cdad]" started-at="2025-04-14T15:58:16 IST" name="tearDownClass" finished-at="2025-04-14T15:58:16 IST" duration-ms="46" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verify_account_registration -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.TC001_RegistrationCheck@79924b]" started-at="2025-02-05T17:33:52 IST" name="teardown" finished-at="2025-02-05T17:33:53 IST" duration-ms="297" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.TC001_RegistrationCheck -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.TestRunner -->
+    </test> <!-- CucumberTests -->
+  </suite> <!-- CucumberSuite -->
 </testng-results>

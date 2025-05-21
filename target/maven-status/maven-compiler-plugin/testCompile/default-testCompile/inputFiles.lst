@@ -1,9 +1,12 @@
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\ContactUsPage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\Homepage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\LoginPage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\MacPage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\MyAccountPage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\NavigationPage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\Registrationpage.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\pageObject\searchPage_Iphone.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\stepDefinitions\Steps.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testBase\BaseClass.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testBase\Basepage.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC001_RegistrationCheck.java
@@ -11,6 +14,13 @@ C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC002_LoginCheck.j
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC003_DataDrivenLoginCheck.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC004_VerifyMacProductSuccess_AddToCart.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC005_Register_Login.java
-C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\DanishExcelUtility.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC006_SearchFunctionality.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC007_ContactUsCheck.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\TC008_VerifyLogin_with_BrowserBack_Forward_Functionality.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\testCases\Temp.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\TestRunner\TestRunner.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\DataProviderss.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\ExcelUtility.java
 C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\ExtentReportUtility.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\RandomStringUtility.java
+C:\Eclipse\WORKSPACE\OPENCART_PROJECT\src\test\java\utilities\ScreenshotUtility.java

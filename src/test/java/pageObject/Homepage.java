@@ -18,7 +18,6 @@ public class Homepage extends Basepage {
 		
 	}
 	
-	
 //whatever element in Homepage of application that individual method
 //that individual locators have to write below...
 	
@@ -34,6 +33,14 @@ public class Homepage extends Basepage {
  @FindBy(xpath="//a[normalize-space()='Desktops']")
  WebElement lnkDesktop;
  
+ @FindBy(xpath="//input[@placeholder='Search']")
+ WebElement lnkSearchbox;
+ 
+ @FindBy(xpath="//button[@class='btn btn-default btn-lg']")
+ WebElement lnkSearchbutton;
+ 
+ @FindBy(xpath="//a[normalize-space()='Contact Us']")
+ WebElement lnkContactUs;
  //whatever element in Homepage of application that individual method 
  //have to write below..
  
@@ -57,4 +64,18 @@ public class Homepage extends Basepage {
 	 lnkLogin.click();
  }
  
+ public void enterSearchDetails(String msg) {
+	 
+	 lnkSearchbox.sendKeys(msg);
+ }
+ 
+ public void clickSearchbutton() {
+	 
+	 lnkSearchbutton.click();
+ }
+ 
+ public void clickContactUs() {
+	 
+	 lnkContactUs.click();
+ }
 }

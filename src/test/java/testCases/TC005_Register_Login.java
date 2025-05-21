@@ -24,10 +24,10 @@ public class TC005_Register_Login extends BaseClass {
 		
 		page.setFirstname(RandomStringUtility.getalphabetic());
 		page.setLastname(RandomStringUtility.getalphabetic());
-	String email=RandomStringUtility.getnumericalphabetic()+"@gmail.com";
+	String email=RandomStringUtility.getnumericalphabetic(5)+"@gmail.com";
 		page.setEmail(email);
 		page.setTelephone(RandomStringUtility.getnumeric());
-	String pass=RandomStringUtility.getnumericalphabetic();
+	String pass=RandomStringUtility.getnumericalphabetic(5);
 		
 		page.setPassword(pass);
 		page.setConfirmPassword(pass);

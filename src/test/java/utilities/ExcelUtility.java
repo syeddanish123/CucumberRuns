@@ -24,7 +24,7 @@ public class ExcelUtility {
 		XSSFWorkbook wb=new XSSFWorkbook(File);
 		XSSFSheet st=wb.getSheet(sheet);
 		
-		int val=(st.getRow(row).getLastCellNum());
+		int val=st.getRow(row).getLastCellNum();
 		
 		  wb.close();
 		    File.close();

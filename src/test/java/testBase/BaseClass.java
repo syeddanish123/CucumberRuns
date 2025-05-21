@@ -1,6 +1,8 @@
 package testBase;
 
 import java.io.File;
+
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.net.URL;
@@ -22,6 +24,7 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -31,6 +34,7 @@ public class BaseClass {
 	public Logger logger;
 	public Properties pro;
 	public FileInputStream fis;
+	public WebDriverWait explitwait;
 	
 	
 	@BeforeClass(groups={"sanity","master","regression","datadriven"})
@@ -114,9 +118,11 @@ public class BaseClass {
 		
 //Deleting cookies...		
 		driver.manage().deleteAllCookies();
+		explitwait=new WebDriverWait(driver,Duration.ofSeconds(10));
 		driver.get(pro.getProperty("URL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().window().maximize();
+		
 			
 	}
 	

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC003_DataDrivenLoginCheck">
+      <class name="TestRunner.TestRunner_contactus">
         <methods>
-          <include name="teardown"/>
-          <include name="loginCheck"/>
-          <include name="setup"/>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="0"/>
+          <include name="tearDownClass"/>
         </methods>
-      </class> <!-- testCases.TC003_DataDrivenLoginCheck -->
+      </class> <!-- TestRunner.TestRunner_contactus -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

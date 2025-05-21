@@ -23,12 +23,12 @@ public class TC001_RegistrationCheck extends BaseClass {
 		logger.info("Registration begin.......");
 		
 		Registrationpage regpage=new Registrationpage(driver);
-		regpage.setFirstname(RandomStringUtility.getalphabetic());
 		regpage.setLastname(RandomStringUtility.getalphabetic());
+		regpage.setFirstname(RandomStringUtility.getalphabetic());
 		regpage.setEmail(RandomStringUtility.getalphabetic()+"@gmail.com");
 		regpage.setTelephone(RandomStringUtility.getnumeric());
 		    
-		String password=RandomStringUtility.getnumericalphabetic();
+		String password=RandomStringUtility.getnumericalphabetic(5);
 		
 		regpage.setPassword(password);
 		regpage.setConfirmPassword(password);

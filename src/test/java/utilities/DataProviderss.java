@@ -37,4 +37,41 @@ public class DataProviderss {
 	   	
 	}
 	
+	
+	
+	@DataProvider(name="contactUS")
+	public Object[][] getData_ContactUS() throws Exception {
+		
+		String path=System.getProperty("user.dir")+"//testData//Book1.xlsx";
+		ExcelUtility excelutil=new ExcelUtility(path);
+		int totallrow=excelutil.getrow("Sheet1");
+		int totallcol=excelutil.getcol("Sheet1",1);
+		
+		Object arr[][]=new Object[totallrow][totallcol];
+		
+		try {
+		
+		for(int i=1;i<=totallrow;i++)
+		{
+			for(int j=0;j<totallcol;j++)
+			{
+				arr[i-1][j]=excelutil.getcelldata("Sheet1",i, j);
+			}
+		}		
+			
+		}
+		
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+		return arr;
+	}
+	
+	
+	
+	
+	
+	
+	
 }

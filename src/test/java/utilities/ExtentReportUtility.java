@@ -1,6 +1,7 @@
 package utilities;
 
 import java.text.SimpleDateFormat;
+
 import java.util.Date;
 import java.util.List;
 
@@ -81,7 +82,7 @@ public class ExtentReportUtility implements ITestListener {
 	  }
 	
 	public void onTestSkipped(ITestResult result) {
-	
+		
 		test=extentreporter.createTest(result.getTestClass().getName());
 		//Common steps: --	
 		test.assignCategory(result.getMethod().getGroups());

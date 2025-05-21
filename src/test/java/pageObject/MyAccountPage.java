@@ -22,6 +22,9 @@ WebElement lnkLogout;
 @FindBy(linkText="Login")
 WebElement lnkLogin;
 
+@FindBy(linkText="Continue")
+WebElement lnkContinue;
+
 public Boolean isMyAccounttextdisplayed() {
 	
 	try {
@@ -41,5 +44,10 @@ public void clickLogout() {
 public void clickLogin() {
 	
 	lnkLogin.click();
+}
+
+public void clickContinue() {
+	
+	lnkContinue.click();
 }
 }

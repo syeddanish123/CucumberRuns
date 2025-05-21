@@ -13,14 +13,14 @@ public class RandomStringUtility  {
 	}
 	
     public static String getnumeric() {
-		
+    	
 		String alp=RandomStringUtils.randomNumeric(5);
 		return alp;
 	}
     
-    public static String getnumericalphabetic() {
+    public static String getnumericalphabetic(int no) {
 		
-		String alp=RandomStringUtils.randomAlphanumeric(5);
+		String alp=RandomStringUtils.randomAlphanumeric(no);
 		return alp;
 	}
 	
