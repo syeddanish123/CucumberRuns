@@ -12,7 +12,8 @@ import io.cucumber.testng.CucumberOptions;
 		       features= {"src/test/resources/Feature/ContactUs.feature"},
 		       monochrome=true,
 		       dryRun=false,
-		       plugin={"pretty","html:CucumberReports_output/contactusReport.html"},
+		       plugin={"pretty","html:CucumberReports_output/contactusReport.html",
+		    		   "pretty","json:CucumberReports_output/contactusReport.json"},
 		       glue= {"stepDefinitions","Hooks"}
 		)
 public class TestRunner_contactus extends AbstractTestNGCucumberTests {
